@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "checkJs": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "es7",
+      "es2017",
+      "es2018",
+      "esnext",
+      "dom"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist/",
+    "paths": {
+      "core/*": [
+        "src/app/core/*"
+      ],
+      "components/*": [
+        "src/app/components/*"
+      ],
+      "containers/*": [
+        "src/app/containers/*"
+      ],
+      "constants/*": [
+        "src/app/constants/*"
+      ],
+      "services/*": [
+        "src/app/services/*"
+      ],
+      "types/*": [
+        "src/app/types/*"
+      ],
+      "styled/*": [
+        "src/app/styled/*"
+      ],
+      "assets/*": [
+        "src/assets/*"
+      ]
+    },
+    "pretty": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es6",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}

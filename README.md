@@ -41,3 +41,12 @@ prettier sass-loader style-loader stylelint ts-loader typescript webpack
 webpack-cli webpack-dev-server webpack-bundle-analyzer
 -D
 `
+
+## Key files
+
+* Babel config
+* PostCSS config
+* TypeScript config
+* Prettier config
+* Stylelint config
+* Webpack config

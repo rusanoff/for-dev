@@ -35,12 +35,16 @@ npm i mobx mobx-react
 `
 npm i @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties
 autoprefixer awesome-typescript-loader babel-loader clean-webpack-plugin cross-env
-css-loader file-loader html-webpack-plugin image-webpack-loade
+css-loader file-loader html-webpack-plugin image-webpack-loader
 mini-css-extract-plugin node-sass postcss-flexbugs-fixes postcss-loader
 prettier sass-loader style-loader stylelint ts-loader typescript webpack
 webpack-cli webpack-dev-server webpack-bundle-analyzer
 -D
 `
+
+**Useful Packages**
+
+* `npm i postcss-animation -D`
 
 ## Key files
 

@@ -5,7 +5,7 @@ Key files and commands for developing a new project
 
 ### dependencies
 
-**Install Basic**
+**Install Main**
 
 `
 npm i react react-dom react-router-dom @types/react @types/react-dom @types/react-router-dom axios @types/axios
@@ -30,7 +30,7 @@ npm i mobx mobx-react
 
 ### devDependencies
 
-**Install Basic**
+**Install Main**
 
 `
 npm i @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties

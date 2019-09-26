@@ -54,3 +54,4 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 * [Prettier config](https://github.com/rusanoff/for-dev/blob/master/.prettierrc.js)
 * [Stylelint config](https://github.com/rusanoff/for-dev/blob/master/.stylelintrc.js)
 * [Webpack config](https://github.com/rusanoff/for-dev/blob/master/webpack.config.js)
+* [ESLint ignore](https://github.com/rusanoff/for-dev/blob/master/.eslintignore)

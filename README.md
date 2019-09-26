@@ -44,9 +44,9 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 
 ## Key files
 
-* Babel config
-* PostCSS config
-* TypeScript config
-* Prettier config
-* Stylelint config
-* Webpack config
+* [Babel config](https://github.com/rusanoff/for-dev/blob/master/babel.config.js)
+* [PostCSS config](https://github.com/rusanoff/for-dev/blob/master/postcss.config.js)
+* [TypeScript config](https://github.com/rusanoff/for-dev/blob/master/tsconfig.json)
+* [Prettier config](https://github.com/rusanoff/for-dev/blob/master/.prettierrc.js)
+* [Stylelint config](https://github.com/rusanoff/for-dev/blob/master/.stylelintrc.js)
+* [Webpack config](https://github.com/rusanoff/for-dev/blob/master/webpack.config.js)

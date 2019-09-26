@@ -6,6 +6,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const DEV = process.env.NODE_ENV !== 'production';
 const { loader: miniCssExtractPluginLoader } = MiniCssExtractPlugin;
 
+const miniCssExtractPluginLoaderConfig = {
+  loader: miniCssExtractPluginLoader,
+  options: {
+    hmr: DEV,
+    reloadAll: true,
+  },
+};
+
 const config = {
   mode: DEV ? 'development' : 'production',
   bail: !DEV,
@@ -55,7 +63,7 @@ const config = {
         test: /\.(sa|sc|c|le)ss$/,
         use: [
           'style-loader',
-          miniCssExtractPluginLoader,
+          miniCssExtractPluginLoaderConfig,
           'css-loader',
           'postcss-loader',
           'sass-loader',

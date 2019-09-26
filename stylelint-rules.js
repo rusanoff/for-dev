@@ -26,6 +26,24 @@ module.exports = {
     "max-empty-lines": 1,
     // Количество символов в строке
     "max-line-length": 100,
+    // Должен быть пробел после двоеточия в `@media`
+    "media-feature-colon-space-after": 'always',
+    // Не должно быть пробела перед двоеточием в `@media`
+    "media-feature-colon-space-before": 'never',
+    // Названия в `@media` должны быть в нижнем регистре
+    "media-feature-name-case": 'lower',
+    // Запретить префиксы в `@media`
+    "media-feature-name-no-vendor-prefix": true,
+    // В скобках в `@media` должны быть пробелы
+    "media-feature-parentheses-space-inside": 'always',
+    // После оператора диапазона всегда должен быть один пробел
+    "media-feature-range-operator-space-after": 'always',
+    // Перед оператором диапазона всегда должен быть один пробел
+    "media-feature-range-operator-space-before": 'always',
+    // После запятых в `@media` всегда должен быть один пробел
+    "media-query-list-comma-space-after": 'always',
+    // Не должно быть пробелов перед запятыми в `@media`
+    "media-query-list-comma-space-before": 'never',
     // Запретить дублирование `@import`
     "no-duplicate-at-import-rules": true,
     // Запретить дублирование селекторов
@@ -64,6 +82,42 @@ module.exports = {
         ],
       },
     ],
+    // В скобках `[]` всегда должны быть пробелы
+    "selector-attribute-brackets-space-inside": 'always',
+    // Не должно быть пробела после оператора в  атрибуте
+    "selector-attribute-operator-space-after": 'never',
+    // Не должно быть пробела перед оператором в атрибуте
+    "selector-attribute-operator-space-before": 'never',
+    // Знасения аттрибутов должны быть в кавычках
+    "selector-attribute-quotes": 'always',
+    // После комбинаторов всегда должен быть один пробел
+    "selector-combinator-space-after": 'always',
+    // Перед комбинатором всегда должен быть один пробел
+    "selector-combinator-space-before": 'always',
+    // Наследуемые селекторы должны быть разделены только одним пробелом
+    "selector-descendant-combinator-no-non-space": true,
+    // После запятых в перечислении селекторов всегда должен быть перевод строки
+    "selector-list-comma-newline-after": 'always',
+    // Никогда не должно быть пробелов перед запятыми в многострочных списках селекторов
+    "selector-list-comma-newline-before": 'never-multi-line',
+    // Должен быть пробел после запятой в перечислениях селекторов
+    "selector-list-comma-space-after": 'always',
+    // Не должно быть пробела перед запятой в перечислениях селекторов
+    "selector-list-comma-space-before": 'never',
+    // Количество пустых строк между селекторами
+    "selector-max-empty-lines": 0,
+    // Запретить префиксы для селекторов
+    "selector-no-vendor-prefix": true,
+    // Псевдоклассы должны быть в нижнем регистре
+    "selector-pseudo-class-case": 'lower',
+    // Требовать один пробел внутри скобок в селекторах псевдоклассов
+    "selector-pseudo-class-parentheses-space-inside": true,
+    // Псевдоэлементы должны быть в нижнем регистре
+    "selector-pseudo-element-case": 'lower',
+    // Для псевдоэлементов должно быть двойное двоеточие
+    "selector-pseudo-element-colon-notation": 'double',
+    // Теги должны быть в нижнем регистре
+    "selector-type-case": 'lower',
     // Запретить неэкранированные переводы строк
     "string-no-newline": true,
     // Вокруг строк должны быть только одинарные ковычки

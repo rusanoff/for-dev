@@ -46,7 +46,8 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 
 `
 npm i eslint eslint-config-airbnb eslint-plugin-react @typescript-eslint/eslint-plugin
-@typescript-eslint/parser eslint-plugin-import eslint-plugin-jsx-a11y -D
+@typescript-eslint/parser eslint-plugin-import eslint-plugin-jsx-a11y
+eslint-import-resolver-typescript -D
 `
 
 **Useful Packages**

@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    'stylelint-order',
+  ],
   rules: {
     // Всегда пустая строка между блоками
     "at-rule-empty-line-before": 'always',
@@ -252,5 +255,10 @@ module.exports = {
     "value-list-max-empty-lines": 0,
     // Запретить префиксы значений
     "value-no-vendor-prefix": true,
+
+    /* Stylelint Order Plugin */
+
+    // Свойства должны быть в алфавитном порядке
+    "order/properties-alphabetical-order": true,
   },
 };

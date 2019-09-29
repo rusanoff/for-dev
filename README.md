@@ -37,7 +37,7 @@ npm i @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-c
 autoprefixer awesome-typescript-loader babel-loader clean-webpack-plugin cross-env
 css-loader file-loader html-webpack-plugin image-webpack-loader
 mini-css-extract-plugin node-sass postcss-flexbugs-fixes postcss-loader
-prettier sass-loader style-loader stylelint ts-loader typescript webpack
+prettier sass-loader style-loader stylelint stylelint-order ts-loader typescript webpack
 webpack-cli webpack-dev-server webpack-bundle-analyzer
 -D
 `

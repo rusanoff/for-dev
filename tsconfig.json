@@ -41,8 +41,8 @@
       "services/*": [
         "src/app/services/*"
       ],
-      "types/*": [
-        "src/app/types/*"
+      "typings/*": [
+        "src/app/typings/*"
       ],
       "styled/*": [
         "src/app/styled/*"

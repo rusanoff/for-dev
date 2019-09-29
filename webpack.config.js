@@ -36,7 +36,7 @@ const config = {
       containers: path.resolve(__dirname, 'src', 'app', 'containers'),
       constants: path.resolve(__dirname, 'src', 'app', 'constants'),
       services: path.resolve(__dirname, 'src', 'app', 'services'),
-      types: path.resolve(__dirname, 'src', 'app', 'types'),
+      typings: path.resolve(__dirname, 'src', 'app', 'typings'),
       assets: path.resolve(__dirname, 'src', 'assets'),
       styled: path.resolve(__dirname, 'src', 'app', 'styled'),
     },

@@ -42,6 +42,13 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 -D
 `
 
+**ESLint Packages**
+
+`
+npm i eslint eslint-config-airbnb eslint-plugin-react @typescript-eslint/eslint-plugin
+@typescript-eslint/parser eslint-plugin-import eslint-plugin-jsx-a11y -D
+`
+
 **Useful Packages**
 
 * `npm i postcss-animation -D`

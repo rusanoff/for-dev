@@ -27,6 +27,8 @@ npm i mobx mobx-react
 
 * `npm i lodash @types/lodash`
 * `npm i styled-components @types/styled-components`
+* `npm i moment @types/moment`
+* `npm i lodash-humps`
 
 ### devDependencies
 
@@ -53,6 +55,7 @@ eslint-import-resolver-typescript -D
 **Useful Packages**
 
 * `npm i postcss-animation -D`
+* `npm i json-server -D`
 
 ## Key files
 

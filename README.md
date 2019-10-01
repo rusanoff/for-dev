@@ -57,6 +57,13 @@ eslint-import-resolver-typescript -D
 * `npm i postcss-animation -D`
 * `npm i json-server -D`
 
+## Package.json scripts
+
+```
+"dev": "webpack-dev-server --mode=development --config=./webpack.config.js --port=8888 --progress --color",
+"build": "webpack --mode=production"
+```
+
 ## Key files
 
 * [Babel config](https://github.com/rusanoff/for-dev/blob/master/babel.config.js)

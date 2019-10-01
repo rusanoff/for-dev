@@ -15,34 +15,18 @@ const miniCssExtractPluginLoaderConfig = {
 };
 
 const config = {
-  mode: DEV ? 'development' : 'production',
   bail: !DEV,
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    historyApiFallback: true,
+    open: true,
+  },
   devtool: DEV ? 'eval-source-map' : 'source-map',
   entry: {
     main: path.resolve(__dirname, 'src', 'index.tsx'),
   },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: DEV ? '/' : './',
-    filename: DEV ? '[name].js' : 'js/[name].[chunkhash:8].js',
-    chunkFilename: DEV ? '[name].js' : 'js/[chunkhash:8].js',
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.tsx', '.ts'],
-    modules: ['node_modules'],
-    alias: {
-      core: path.resolve(__dirname, 'src', 'app', 'core'),
-      components: path.resolve(__dirname, 'src', 'app', 'components'),
-      containers: path.resolve(__dirname, 'src', 'app', 'containers'),
-      constants: path.resolve(__dirname, 'src', 'app', 'constants'),
-      services: path.resolve(__dirname, 'src', 'app', 'services'),
-      typings: path.resolve(__dirname, 'src', 'app', 'typings'),
-      assets: path.resolve(__dirname, 'src', 'assets'),
-      styled: path.resolve(__dirname, 'src', 'app', 'styled'),
-    },
-  },
+  mode: DEV ? 'development' : 'production',
   module: {
-    strictExportPresence: true,
     rules: [
       {
         test: /\.(tsx?|jsx?)$/,
@@ -114,6 +98,13 @@ const config = {
         ],
       },
     ],
+    strictExportPresence: true,
+  },
+  output: {
+    chunkFilename: DEV ? '[name].js' : 'js/[chunkhash:8].js',
+    filename: DEV ? '[name].js' : 'js/[name].[chunkhash:8].js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: DEV ? '/' : './',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -125,9 +116,26 @@ const config = {
       filename: 'style.[chunkhash:8].css',
     }),
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    historyApiFallback: true,
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, 'src', 'assets'),
+      components: path.resolve(__dirname, 'src', 'app', 'components'),
+      constants: path.resolve(__dirname, 'src', 'app', 'constants'),
+      containers: path.resolve(__dirname, 'src', 'app', 'containers'),
+      core: path.resolve(__dirname, 'src', 'app', 'core'),
+      services: path.resolve(__dirname, 'src', 'app', 'services'),
+      styled: path.resolve(__dirname, 'src', 'app', 'styled'),
+      typings: path.resolve(__dirname, 'src', 'app', 'typings'),
+    },
+    extensions: [
+      '.js',
+      '.jsx',
+      '.ts',
+      '.tsx',
+    ],
+    modules: [
+      'node_modules',
+    ],
   },
 };
 

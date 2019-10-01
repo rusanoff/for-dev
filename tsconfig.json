@@ -26,29 +26,29 @@
     "noUnusedParameters": true,
     "outDir": "./dist/",
     "paths": {
-      "core/*": [
-        "src/app/core/*"
+      "assets/*": [
+        "src/assets/*"
       ],
       "components/*": [
         "src/app/components/*"
       ],
+      "constants/*": [
+        "src/app/constants/*"
+      ],
       "containers/*": [
         "src/app/containers/*"
       ],
-      "constants/*": [
-        "src/app/constants/*"
+      "core/*": [
+        "src/app/core/*"
       ],
       "services/*": [
         "src/app/services/*"
       ],
-      "typings/*": [
-        "src/app/typings/*"
-      ],
       "styled/*": [
         "src/app/styled/*"
       ],
-      "assets/*": [
-        "src/assets/*"
+      "typings/*": [
+        "src/app/typings/*"
       ]
     },
     "pretty": true,

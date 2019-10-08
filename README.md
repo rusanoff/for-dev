@@ -52,6 +52,12 @@ npm i eslint eslint-config-airbnb eslint-plugin-react @typescript-eslint/eslint-
 eslint-import-resolver-typescript -D
 `
 
+**TSLint Packages**
+
+```
+npm i tslint tslint-react tslint-react-a11y tslint-react-hooks -D
+```
+
 **Useful Packages**
 
 * `npm i postcss-animation -D`
@@ -74,3 +80,4 @@ eslint-import-resolver-typescript -D
 * [Webpack config](https://github.com/rusanoff/for-dev/blob/master/webpack.config.js)
 * [ESLint config](https://github.com/rusanoff/for-dev/blob/master/.eslintrc.js)
 * [ESLint ignore](https://github.com/rusanoff/for-dev/blob/master/.eslintignore)
+* [TSLint config]()

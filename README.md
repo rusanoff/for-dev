@@ -45,10 +45,13 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 **ESLint Packages**
 
 `
-npm i eslint eslint-config-airbnb eslint-plugin-react @typescript-eslint/eslint-plugin
+npm i eslint eslint-plugin-react @typescript-eslint/eslint-plugin
 @typescript-eslint/parser eslint-plugin-import eslint-plugin-jsx-a11y
 eslint-import-resolver-typescript -D
 `
+
+* `npm i eslint-config-airbnb -D`
+* `npm i eslint-config-google -D`
 
 **Useful Packages**
 

@@ -22,7 +22,7 @@ module.exports = {
       ],
       files: [
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
@@ -31,12 +31,14 @@ module.exports = {
         ecmaFeatures: {
           jsx: true,
         },
-        project: './tsconfig.json',
+        project: './tsconfig.eslint.json',
+        createDefaultProgram: true,
       },
       plugins: [
         '@typescript-eslint',
         'react',
         'jsx-a11y',
+        'import',
       ],
       rules: {
         /* ESLint Rules */
@@ -106,6 +108,7 @@ module.exports = {
             allowMultiline: true,
           },
         ],
+        "react/jsx-props-no-spreading": 'off',
         "react/jsx-uses-react": 'error',
         "react/jsx-uses-vars": 'error',
         "react/jsx-filename-extension": [
@@ -118,9 +121,20 @@ module.exports = {
           },
         ],
         "react/prop-types": 'off',
+        "react/state-in-constructor": 'off',
 
         /* Import Rules */
         "import/prefer-default-export": 'off',
+        "import/no-unresolved": 'off',
+        "import/order": 'off',
+      },
+      settings: {
+        "react": {
+          version: 'detect',
+        },
+        "import/resolver": {
+          typescript: './tsconfig.json',
+        },
       },
     },
   ],

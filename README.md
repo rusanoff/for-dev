@@ -27,6 +27,8 @@ npm i mobx mobx-react
 
 * `npm i lodash @types/lodash`
 * `npm i styled-components @types/styled-components`
+* `npm i moment @types/moment`
+* `npm i lodash-humps`
 
 ### devDependencies
 
@@ -53,9 +55,23 @@ eslint-import-resolver-typescript -D
 * `npm i eslint-config-airbnb -D`
 * `npm i eslint-config-google -D`
 
+**TSLint Packages**
+
+```
+npm i tslint tslint-react tslint-react-a11y tslint-react-hooks -D
+```
+
 **Useful Packages**
 
 * `npm i postcss-animation -D`
+* `npm i json-server -D`
+
+## Package.json scripts
+
+```
+"dev": "webpack-dev-server --mode=development --config=./webpack.config.js --port=8888 --progress --color",
+"build": "webpack --mode=production"
+```
 
 ## Key files
 
@@ -67,3 +83,4 @@ eslint-import-resolver-typescript -D
 * [Webpack config](https://github.com/rusanoff/for-dev/blob/master/webpack.config.js)
 * [ESLint config](https://github.com/rusanoff/for-dev/blob/master/.eslintrc.js)
 * [ESLint ignore](https://github.com/rusanoff/for-dev/blob/master/.eslintignore)
+* [TSLint config]()

@@ -49,17 +49,12 @@ webpack-cli webpack-dev-server webpack-bundle-analyzer
 `
 npm i eslint eslint-plugin-react @typescript-eslint/eslint-plugin
 @typescript-eslint/parser eslint-plugin-import eslint-plugin-jsx-a11y
-eslint-import-resolver-typescript -D
+eslint-import-resolver-typescript eslint-plugin-optimize-regex
+eslint-plugin-promise eslint-plugin-react-hooks eslint-plugin-sonarjs -D
 `
 
 * `npm i eslint-config-airbnb -D`
 * `npm i eslint-config-google -D`
-
-**TSLint Packages**
-
-```
-npm i tslint tslint-react tslint-react-a11y tslint-react-hooks -D
-```
 
 **Useful Packages**
 
@@ -70,7 +65,9 @@ npm i tslint tslint-react tslint-react-a11y tslint-react-hooks -D
 
 ```
 "dev": "webpack-dev-server --mode=development --config=./webpack.config.js --port=8888 --progress --color",
-"build": "webpack --mode=production"
+"build": "webpack --mode=production",
+"eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
+"eslint:dump": "eslint --print-config ./.eslintrc.js"
 ```
 
 ## Key files
@@ -83,4 +80,3 @@ npm i tslint tslint-react tslint-react-a11y tslint-react-hooks -D
 * [Webpack config](https://github.com/rusanoff/for-dev/blob/master/webpack.config.js)
 * [ESLint config](https://github.com/rusanoff/for-dev/blob/master/.eslintrc.js)
 * [ESLint ignore](https://github.com/rusanoff/for-dev/blob/master/.eslintignore)
-* [TSLint config]()

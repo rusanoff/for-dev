@@ -1,7 +1,7 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import path from 'path';
 
 const DEV = process.env.NODE_ENV !== 'production';
 const { loader: miniCssExtractPluginLoader } = MiniCssExtractPlugin;
@@ -120,12 +120,8 @@ const config = {
     alias: {
       assets: path.resolve(__dirname, 'src', 'assets'),
       components: path.resolve(__dirname, 'src', 'app', 'components'),
-      constants: path.resolve(__dirname, 'src', 'app', 'constants'),
-      containers: path.resolve(__dirname, 'src', 'app', 'containers'),
-      core: path.resolve(__dirname, 'src', 'app', 'core'),
-      services: path.resolve(__dirname, 'src', 'app', 'services'),
-      styled: path.resolve(__dirname, 'src', 'app', 'styled'),
-      typings: path.resolve(__dirname, 'src', 'app', 'typings'),
+      modules: path.resolve(__dirname, 'src', 'app', 'modules'),
+      configs: path.resolve(__dirname, 'src', 'app', 'configs'),
     },
     extensions: [
       '.js',
@@ -133,9 +129,7 @@ const config = {
       '.ts',
       '.tsx',
     ],
-    modules: [
-      'node_modules',
-    ],
+    modules: ['node_modules'],
   },
 };
 

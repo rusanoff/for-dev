@@ -36,7 +36,7 @@ npm i mobx mobx-react
 
 `
 npm i @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties
-autoprefixer awesome-typescript-loader babel-loader clean-webpack-plugin cross-env
+@babel/register autoprefixer awesome-typescript-loader babel-loader clean-webpack-plugin cross-env
 css-loader file-loader html-webpack-plugin image-webpack-loader
 mini-css-extract-plugin node-sass postcss-flexbugs-fixes postcss-loader
 prettier sass-loader style-loader stylelint stylelint-order ts-loader typescript webpack
@@ -61,13 +61,32 @@ eslint-plugin-promise eslint-plugin-react-hooks eslint-plugin-sonarjs -D
 * `npm i postcss-animation -D`
 * `npm i json-server -D`
 
-## Package.json scripts
+## Package.json
+
+**Scripts**
 
 ```
 "dev": "webpack-dev-server --mode=development --config=./webpack.config.js --port=8888 --progress --color",
 "build": "webpack --mode=production",
 "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
 "eslint:dump": "eslint --print-config ./.eslintrc.js"
+```
+
+**Browserlist**
+
+```
+"browserslist": {
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
+},
 ```
 
 ## Key files
